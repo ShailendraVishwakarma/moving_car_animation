@@ -1,0 +1,130 @@
+body{
+    height: 100px;
+    width: 100px;
+    /* background:url('7daa2cef-4503-4d77-a8c5-deecc28200f8.jpg'); */
+    background-size: cover;
+    overflow: hidden;
+    background-position: 0px;
+    animation: bgmove 5s linear infinite;
+}
+@keyframes bgmove{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 5000px;
+    }
+}
+.car{
+    position: absolute;
+    bottom:20px;
+    right: 0%;
+    height: 150px;
+    width: 300px;
+    background: url('images.jpg');
+    animation: car 15s linear infinite;
+    /* animation-duration: 20s; */
+}
+@keyframes car{
+    0%{
+        right: -10%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.tyre{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: black;
+    animation: tyre 15s linear infinite;
+}
+@keyframes tyre{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+    transform: rotate(0deg);
+    }
+}
+.left{
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+}
+.right{
+    position: absolute;
+    bottom: 18px;
+    right: 25px;
+}
+.rim{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    border: 2px silver dotted;
+    left:5px;
+    bottom:5px;
+    animation: rim 5s linear infinite;
+}
+
+
+
+/* first car completed............... */
+
+.car1{
+    position: absolute;
+    height: 170px;
+    width: 290px;
+    top:0px;
+    /* bottom:-55px; */
+    left:-5%;
+    background: url('car1.jpg')no-repeat;
+    animation:car1 15s linear infinite;
+}
+@keyframes car1{
+    0%{
+        right: -10px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+.tyre1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: black;
+    animation: tyre1 15s linear infinite;
+}
+@keyframes tyre1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+.left1{
+    position: absolute;
+    left: 50px;
+    top:80px;
+}
+.right1{
+position: absolute;
+left: 206px;
+top: 80px;
+}
+.rim1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 2px silver dotted;
+    left: 2.5px;
+    top: 3px;
+}
+
+
